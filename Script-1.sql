@@ -16,7 +16,7 @@ musician_id INTEGER references musicians(musician_id)
 create table if not exists Albums (
 album_id SERIAL primary key,
 album_name VARCHAR(50) not null,
-release_year VARCHAR(5)
+release_year integer VARCHAR(5)
 );
 
 create table if not exists Albums_Musicians (
