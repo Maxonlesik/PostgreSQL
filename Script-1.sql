@@ -34,7 +34,7 @@ album_id INTEGER references Albums(album_id)
 create table if not exists Collection (
 collection_id SERIAL primary key,
 collection_name VARCHAR(30) not null,
-release_year VARCHAR(5)
+release_year integer VARCHAR(5)
 );
 
 create table if not exists SongsCollections (
